@@ -1,4 +1,4 @@
-
+//THIS IS THE MAIN GAME WE DIDN'T HAVE TIME TO GET THE OTHER STUFF WORKING
 import java.applet.*;
 import java.awt.*;
 import java.awt.event.*;
