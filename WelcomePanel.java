@@ -32,8 +32,11 @@ public class WelcomePanel extends JPanel
 			@Override
 			public void actionPerformed(ActionEvent arg0) 
 			{
-				String player1 = JOptionPane.showInputDialog(null, "Enter Player 1 Username: ");
-				String player2 = JOptionPane.showInputDialog(null, "Enter Player 2 Username: ");
+				//String player1 = JOptionPane.showInputDialog(null, "Enter Player 1 Username: ");
+				//String player2 = JOptionPane.showInputDialog(null, "Enter Player 2 Username: ");
+				MainGame game = new MainGame();
+				game.init();
+				game.start();
 			}
 			
 	
@@ -44,10 +47,10 @@ public class WelcomePanel extends JPanel
 	protected void paintComponent(Graphics g)
 	{
 		super.paintComponent(g);
-		Image bck = null;
+		/*Image bck = null;
 		try 
 		{
-			bck = ImageIO.read(new File("Untitled.png"));
+			bck = ImageIO.read(new File("background.png"));
 		} 
 		
 		catch (IOException e) 
@@ -56,7 +59,7 @@ public class WelcomePanel extends JPanel
 			e.printStackTrace();
 		}
 		
-		g.drawImage(bck,0,0,null);
+		g.drawImage(bck,0,0,null);*/
 	}
 	
 	
